@@ -316,12 +316,12 @@ passage.gsub!(/\u00A0/, '')
 passage.gsub!(/&nbsp;/, ' ')
 passage.gsub!(/&amp;/, '&')
 # replace smart quotes with dumb ones
-passage.gsub!(/“/, '"')
-passage.gsub!(/”/, '"')
-passage.gsub!(/‘/, '\'')
-passage.gsub!(/’/, '\'')
+# passage.gsub!(/“/, '"')
+# passage.gsub!(/”/, '"')
+# passage.gsub!(/‘/, '\'')
+# passage.gsub!(/’/, '\'')
 # replace en dash with markdwon equivalent
-passage.gsub!(/—/, '--')
+# passage.gsub!(/—/, '--')
 
 # ignore a particular string in NIV
 passage.gsub!(%r{<h3>More on the NIV</h3>}, '')
@@ -427,8 +427,7 @@ hc = {}
 ('A'..'ZZ').each_with_index { |w, i| hc[i + 1] = w }
 
 # Finally, prepare the output
-output_text = "# #{full_ref} (#{version})\n"
-output_text += "#{passage}\n\n"
+output_text = "#{passage}\n\n"
 if number_footnotes.positive? && opts[:footnotes]
   output_text += "### Footnotes\n"
   i = 1
