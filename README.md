@@ -1,5 +1,9 @@
 # Bible Gateway to Markdown Script
 
+This is a fork of [jgclark's BibleGateway-to-Markdown](https://github.com/jgclark/BibleGateway-to-Markdown) that catches a few more HTML elements to keep, including poetry and small cap names. This script is used in conjunction with my [BibleGateway-to-Obsidian](https://github.com/prestonharberts/biblegateway-to-obsidian) script.
+
+## Original README below
+
 This script uses [BibleGateway.com](http://BibleGateway.com/)'s wonderful passage lookup tool to find a passage and turn it into Markdown usable in other ways.
 
 The Markdown output includes:
